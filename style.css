@@ -1,0 +1,536 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;}
+
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+.cabecalho {
+    background-image: url("imagens/aracruz003.png");
+    height: 300px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    z-index: 200;
+}
+
+.brasao {  
+  max-height: 100%;
+  min-width: 100%; 
+}
+
+img#img-1 {
+  width: 70px;
+  height: 60px;
+  float: right;
+  align-items: right;
+  margin-top: 20px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.big {
+    font-family: "roboto", sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: right;
+    padding-top: 10px;
+    padding-right: 20px;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.459);
+    
+}
+
+.small {
+    font-family: "roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: right;
+    padding-right: 20px;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.459);
+}
+navbar {
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-image:linear-gradient(to top, rgb(2, 111, 201), rgb(145, 196, 238));
+    background-size: 200% 100%;
+    box-shadow:  6px 6px 13px 0px rgba(0, 0, 0, 0.473);
+}
+
+button {
+    background-color: transparent;
+    color: white;
+    padding: 10px;
+    margin-left: 10px;
+    border: none;
+    cursor: pointer;
+    font-weight: bolder;
+    font-size: 1em;      
+}
+
+button:hover {
+    background-color:rgba(253, 252, 252, 0.178);
+    border-radius: 5px;
+}
+
+button:active {
+    background-color:rgb(253, 252, 252);
+    color: rgb(2, 111, 201);
+    border-radius: 5px;
+}
+
+button.covid {
+    background-color:rgba(206, 13, 6, 0.986);
+    color: white;
+    border-radius: 25px;    
+    box-shadow: 0px 0px 5px white;
+    padding: 5px;
+}
+button.covid:hover {
+    background-color:rgba(4, 32, 156, 0.986);
+    color: white;
+}
+
+button.covid:active {
+    background-color:rgba(252, 145, 5, 0.986);
+    color: white;
+}
+
+
+.content-2 {
+    max-width: 1500px;
+    width: 100%;
+    padding: 0 4%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: #78c3f854;
+  }
+  
+  @media screen and (max-width: 767px) {
+    .content-2 {
+       padding-top: 50px;
+       flex-direction: column;
+    }
+  }
+  
+  .card {
+    width: 100%;
+    max-width: 250px;
+    min-width: 100px;
+    height: 250px;
+    background-color:#07568F;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.24);
+    border: 2px solid rgba(7, 7, 7, 0.12);
+    font-size: 16px;   
+    transition: all 0.3s ease;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    
+  }
+  
+  .icon {
+    margin: 0 auto;
+    width: 100%;
+    height: 80px;
+    max-width:80px;
+    background: linear-gradient(90deg, #f18d57 0%, #F26419 40%, rgba(0, 0, 0, 0.28) 60%);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    transition: all 0.8s ease;
+    background-position: 0px;
+    background-size: 200px;
+  }
+
+  .material-icons.md-36 { font-size: 36px; }
+  
+  .card .title {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    margin-top: 30px;
+    color: white;
+    font-family: "roboto", sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .card .text {
+    width: 80%;
+    margin: 0 auto;
+    font-size: "roboto", sans-serif;
+    font-size: 13px;
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+    font-weight: 200;
+    letter-spacing: 2px;
+    opacity: 0;
+    max-height:0;
+    transition: all 0.3s ease;
+  }
+  
+  .card:hover {
+    height: 270px;
+  }
+  
+  .card:hover .info {
+    height: 90%;
+  }
+  
+  .card:hover .text {
+    transition: all 0.3s ease;
+    opacity: 1;
+    max-height:40px;
+  }
+  
+  .card:hover .icon {
+    background-position: -120px;
+    transition: all 0.3s ease;
+  }
+  
+  .card:hover .icon i {
+    background: linear-gradient(90deg, #f18d57, #F26419);
+    -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+    opacity: 1;
+    transition: all 0.3s ease;
+  }
+  
+
+  section.imagem {
+    background-color: gray;
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+section.imagem > p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;  
+
+}
+
+section#img01 {
+    background-image: url(../Portal/imagens/aracruz004.png);
+    background-position: bottom right;
+    background-size: cover;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    max-width: 100%;
+    min-height: 100%;
+    
+}
+
+.img-2 {
+    max-width: 100%;
+    min-height: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.24);}
+    
+
+section#img02 {
+    background-image: url(../Portal/imagens/aracruz006.png);
+    background-position: center right;
+    background-size: cover;
+    
+}
+
+section#normal-1 {
+  background-color: rgb(243, 206, 206);
+}
+
+.covid-19 {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.459);
+    background-color: rgb(243, 206, 206);
+       
+}
+
+.button-covid-19 {
+  background-color: rgb(119, 1, 1);
+  width: 230px;
+  height: 60px;
+  margin: 5px auto 5px auto;
+  padding-top: 5px;
+  border-radius: 30px;
+  outline: 3px dashed rgb(250, 250, 250);
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.459);
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.button-covid-19:hover {
+  background-color: rgb(4, 32, 156);
+  color: white;
+}
+
+.button-covid-19:active {
+  background-color: rgb(252, 145, 5);
+  color: white;
+}
+
+a {
+  float: left;
+  font-family: "roboto", sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 0px 0px 5px rgba(245, 243, 243, 0.459);
+  color: white;  
+  margin-top: 12px;
+  margin-left: 7px;
+  
+}
+.img-covid-19 {
+  vertical-align: middle;
+  float: left;
+  height: 50px;
+  width: 50px;
+  margin-left: 5px;
+  margin-bottom: 2px;
+}
+
+.accordion-primary {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 2px;
+  padding-bottom: 50px;
+  background-color: rgb(243, 206, 206);
+  
+}
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: rgba(119, 1, 1, 0.767);
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 1000px;
+  text-align: left;
+  margin: 0px auto 0px auto;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.accordion:hover {
+  background-color: rgba(119, 1, 1, 0.425);
+  color: white ;
+  border: none;
+
+}
+
+.active {
+  background-color: rgb(119, 1, 1);
+  color: white;
+}
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  width: 1000px;
+  max-width: 100%;
+  display: none;
+  overflow: auto;
+}
+
+/* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
+.icon-bar {
+  display: flex;
+  position: fixed;
+  top:25%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  flex-direction: column;
+}
+
+.icon-bar i {
+  width: 5px;
+  height: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+}
+
+/* Style the icon bar links */
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+/* Style the social media icons with color, if you want */
+.icon-bar a:hover {
+  background-color: #000; 
+}
+
+.facebook {
+  background: #3B5998;
+  color: white;
+  
+}
+
+.twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.google {
+  background: #dd4b39;
+  color: white;
+}
+
+.linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.youtube {
+  background: #bb0000;
+  color: white;
+}
+
+ul {list-style-type: none;}
+body {font-family: Verdana, sans-serif;}
+
+.calendar {
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+/* Month header */
+.month {
+  padding: 50px 25px;
+  width: 60%;
+  background: #07568F;
+  text-align: center;
+  margin: auto;
+  padding-top: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.459);
+}
+
+/* Month list */
+.month ul {
+  margin: 0;
+  padding: 0;
+}
+
+.month ul li {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+/* Previous button inside month header */
+.month .prev {
+  float: left;
+  padding-top: 10px;
+}
+
+/* Next button */
+.month .next {
+  float: right;
+  padding-top: 10px;
+}
+
+/* Weekdays (Mon-Sun) */
+.weekdays {
+  width: 60%;;
+  margin: auto;
+  padding: 10px 0;
+  background-color:#ddd;
+}
+
+.weekdays li {
+  display: inline-block;
+  width: 13.6%;
+  color: #666;
+  text-align: center;
+}
+
+/* Days (1-31) */
+.days {
+  padding: 10px 0;
+  background: #eee;
+  margin: auto;
+  width: 60%;
+  margin-bottom: 30px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.459);
+}
+
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 13.6%;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size:12px;
+  color: #777;
+}
+
+/* Highlight the "current" day */
+.days li .active {
+  padding: 5px;
+  background: #1abc9c;
+  color: white !important
+}
+
+footer {
+  text-align: left;
+  padding-left: 15px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: rgb(26, 23, 23);
+  color: white;
+  box-shadow: 0px 0px 5px rgb(44, 40, 40);
+  width: 100%;
+  margin: 0px auto 0px auto;
+}
+
+footer p {
+  font-family: "roboto", sans-serif;
+  font-size: 14px;
+  color: white;
+}
